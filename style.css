@@ -1,0 +1,25 @@
+.profile-img {
+    opacity: 0;
+    transform: scale(0.8);
+    transition: all 0.8s ease-in-out;
+}
+
+.profile-img.show {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.project-item {
+    opacity: 0;
+    transform: translateX(-100px); /* Geser ke kiri */
+    transition: all 0.8s ease-in-out;
+}
+
+.project-item:nth-child(even) {
+    transform: translateX(100px); /* Geser ke kanan untuk elemen genap */
+}
+
+.project-item.show {
+    opacity: 1;
+    transform: translateX(0); /* Kembali ke posisi normal */
+}
